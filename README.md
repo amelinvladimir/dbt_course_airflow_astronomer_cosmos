@@ -1,1 +1,0 @@
-# dbt_course_airflow_astronomer_cosmos
