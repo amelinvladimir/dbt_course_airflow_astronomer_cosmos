@@ -1,0 +1,79 @@
+{"timestamp":"2025-05-08T09:13:19.041120","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-08T09:13:19.042510","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dbt/my_first_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-08T09:13:19.061043","level":"info","event":"Trying to parse the dbt project using dbt ls cache cosmos_cache__my_first_dag...","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-05-08T09:13:19.065035","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-05-08T09:13:20.131092","level":"warning","event":"The dbt project folder contains a symbolic link to a non-existent file: /opt/airflow/dags/dbt/.trunk/actions","logger":"cosmos.cache"}
+{"timestamp":"2025-05-08T09:13:20.133921","level":"warning","event":"The dbt project folder contains a symbolic link to a non-existent file: /opt/airflow/dags/dbt/.trunk/logs","logger":"cosmos.cache"}
+{"timestamp":"2025-05-08T09:13:20.134991","level":"warning","event":"The dbt project folder contains a symbolic link to a non-existent file: /opt/airflow/dags/dbt/.trunk/notifications","logger":"cosmos.cache"}
+{"timestamp":"2025-05-08T09:13:20.135963","level":"warning","event":"The dbt project folder contains a symbolic link to a non-existent file: /opt/airflow/dags/dbt/.trunk/out","logger":"cosmos.cache"}
+{"timestamp":"2025-05-08T09:13:20.136830","level":"warning","event":"The dbt project folder contains a symbolic link to a non-existent file: /opt/airflow/dags/dbt/.trunk/plugins/trunk","logger":"cosmos.cache"}
+{"timestamp":"2025-05-08T09:13:20.140117","level":"warning","event":"The dbt project folder contains a symbolic link to a non-existent file: /opt/airflow/dags/dbt/.trunk/tools","logger":"cosmos.cache"}
+{"timestamp":"2025-05-08T09:13:20.192692","level":"warning","event":"The dbt project folder contains a symbolic link to a non-existent file: /opt/airflow/dags/dbt/.venv/bin/python","logger":"cosmos.cache"}
+{"timestamp":"2025-05-08T09:13:20.195749","level":"warning","event":"The dbt project folder contains a symbolic link to a non-existent file: /opt/airflow/dags/dbt/.venv/bin/python3","logger":"cosmos.cache"}
+{"timestamp":"2025-05-08T09:13:20.196605","level":"warning","event":"The dbt project folder contains a symbolic link to a non-existent file: /opt/airflow/dags/dbt/.venv/bin/python3.13","logger":"cosmos.cache"}
+{"timestamp":"2025-05-08T09:13:59.671861","level":"info","event":"Cosmos performance: time to calculate cache identifier cosmos_cache__my_first_dag for current version: 40.58539835199997","logger":"cosmos.cache"}
+{"timestamp":"2025-05-08T09:13:59.672764","level":"info","event":"Cosmos performance [81b6b32c5700|239]: The cache size for cosmos_cache__my_first_dag is 2453","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-05-08T09:13:59.673864","level":"info","event":"Cosmos performance: Cache hit for cosmos_cache__my_first_dag - 7b80209e8e79272c7f5e66cbc5cba00b,1216c01535c4629822fc8b4e59102553","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-05-08T09:13:59.687742","level":"info","event":"Total nodes: 2","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-05-08T09:13:59.687864","level":"info","event":"Total filtered nodes: 2","logger":"cosmos.dbt.graph"}
+{"timestamp":"2025-05-08T09:13:59.688323","level":"info","event":"Cosmos performance (my_first_dag) -  [81b6b32c5700|239]: It took 40.6s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE","logger":"cosmos.converter"}
+{"timestamp":"2025-05-08T09:13:59.728093","level":"info","event":"Cosmos performance (my_first_dag) - [81b6b32c5700|239]: It took 0.0397s to build the Airflow DAG.","logger":"cosmos.converter"}
+{"timestamp":"2025-05-08T09:13:59.731527","level":"warning","event":"/home/airflow/.local/lib/python3.12/site-packages/pydantic/main.py:463: UserWarning: Pydantic serializer warnings:\n  PydanticSerializationUnexpectedValue(Expected `str` - serialized value may not be as expected [input_value={'version': '7b80209e8e79..., 'task_group_id': None}, input_type=dict])\n  return self.__pydantic_serializer__.to_python(\n","logger":"py.warnings"}
+{"timestamp":"2025-05-08T09:13:59.880830Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:13:59.883729Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:13:59.887331Z","level":"info","event":"Current task name:stg_flights__aircrafts.run","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:13:59.891120Z","level":"info","event":"Dag name:my_first_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:02.211466","level":"info","event":"dbtRunner is available. Using dbtRunner for invoking dbt.","logger":"cosmos.operators.base"}
+{"timestamp":"2025-05-08T09:14:02.212828","level":"info","event":"Cloning project to writable temp directory /tmp/tmpyn_w3lty from /opt/airflow/dags/dbt","logger":"cosmos.operators.base"}
+{"timestamp":"2025-05-08T09:14:02.217335","level":"info","event":"Partial parse is enabled and the latest partial parse file is /opt/airflow/dags/dbt/target/partial_parse.msgpack","logger":"cosmos.operators.base"}
+{"timestamp":"2025-05-08T09:14:02.281804","level":"info","event":"Profile caching is enable.","logger":"cosmos.config"}
+{"timestamp":"2025-05-08T09:14:02.286499","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-05-08T09:14:02.322864","level":"info","event":"Connection Retrieved 'postgres_dbt'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-05-08T09:14:02.323754","level":"info","event":"Profile found in cache using profile: /tmp/cosmos/profile/5685f440b338e3a65841a90df244eacf377566740ec75f4ce3e77a914c55ffdd/profiles.yml.","logger":"cosmos.config"}
+{"timestamp":"2025-05-08T09:14:02.331145","level":"info","event":"Trying to run dbtRunner with:\n ['deps', '--project-dir', '/tmp/tmpyn_w3lty', '--profiles-dir', '/tmp/cosmos/profile/5685f440b338e3a65841a90df244eacf377566740ec75f4ce3e77a914c55ffdd', '--profile', 'default', '--target', 'dev']\n in /tmp/tmpyn_w3lty","logger":"cosmos.dbt.runner"}
+{"timestamp":"2025-05-08T09:14:02.449380Z","level":"info","event":"\u001b[0m09:14:02  Running with dbt=1.8.7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:04.091302Z","level":"info","event":"\u001b[0m09:14:04  Installing dbt-labs/dbt_utils","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:04.867713Z","level":"info","event":"\u001b[0m09:14:04  Installed from version 1.3.0","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:04.869844Z","level":"info","event":"\u001b[0m09:14:04  Up to date!","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:04.872823Z","level":"info","event":"\u001b[0m09:14:04  Installing dbt-labs/codegen","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:05.318822Z","level":"info","event":"\u001b[0m09:14:05  Installed from version 0.13.1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:05.322103Z","level":"info","event":"\u001b[0m09:14:05  Up to date!","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:05.325144Z","level":"info","event":"\u001b[0m09:14:05  Installing Datavault-UK/automate_dv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:05.842817Z","level":"info","event":"\u001b[0m09:14:05  Installed from version 0.11.2","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:05.846846Z","level":"info","event":"\u001b[0m09:14:05  Up to date!","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:06.486264","level":"info","event":"Trying to run dbtRunner with:\n ['run', '--models', 'stg_flights__aircrafts', '--project-dir', '/tmp/tmpyn_w3lty', '--profiles-dir', '/tmp/cosmos/profile/5685f440b338e3a65841a90df244eacf377566740ec75f4ce3e77a914c55ffdd', '--profile', 'default', '--target', 'dev']\n in /tmp/tmpyn_w3lty","logger":"cosmos.dbt.runner"}
+{"timestamp":"2025-05-08T09:14:06.531693Z","level":"info","event":"\u001b[0m09:14:06  Running with dbt=1.8.7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:06.860899Z","level":"info","event":"\u001b[0m09:14:06  Registered adapter: postgres=1.9.0","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:08.100095Z","level":"info","event":"\u001b[0m09:14:08  Unable to do partial parsing because of a version mismatch","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:13.726934Z","level":"info","event":"\u001b[0m09:14:13  09:14:13 + my pretty message","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:14.640502Z","level":"info","event":"\u001b[0m09:14:14  [\u001b[33mWARNING\u001b[0m]: Deprecated functionality","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:14.643161Z","level":"info","event":"The `tests` config has been renamed to `data_tests`. Please see","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:14.646310Z","level":"info","event":"https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:14.647905Z","level":"info","event":"information.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:16.820858Z","level":"info","event":"\u001b[0m09:14:16  Found 24 models, 5 snapshots, 10 analyses, 26 data tests, 3 seeds, 1 operation, 8 sources, 850 macros","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:16.828870Z","level":"info","event":"\u001b[0m09:14:16","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.099140Z","level":"info","event":"\u001b[0m09:14:17  Concurrency: 1 threads (target='dev')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.101350Z","level":"info","event":"\u001b[0m09:14:17","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.107603Z","level":"info","event":"\u001b[0m09:14:17  1 of 1 START sql table model intermediate.stg_flights__aircrafts ............... [RUN]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.398318Z","level":"info","event":"\u001b[0m09:14:17  1 of 1 OK created sql table model intermediate.stg_flights__aircrafts .......... [\u001b[32mSELECT 9\u001b[0m in 0.29s]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.444125Z","level":"info","event":"\u001b[0m09:14:17","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.445496Z","level":"info","event":"\u001b[0m09:14:17  Running 1 on-run-end hook","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.475885Z","level":"info","event":"\u001b[0m09:14:17  1 of 1 START hook: dbt_course_practice.on-run-end.0 ............................ [RUN]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.485509Z","level":"info","event":"\u001b[0m09:14:17  1 of 1 OK hook: dbt_course_practice.on-run-end.0 ............................... [\u001b[32mOK\u001b[0m in 0.00s]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.491206Z","level":"info","event":"\u001b[0m09:14:17","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.494881Z","level":"info","event":"\u001b[0m09:14:17","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.498650Z","level":"info","event":"\u001b[0m09:14:17  Finished running 1 table model, 1 project hook in 0 hours 0 minutes and 0.65 seconds (0.65s).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.581273Z","level":"info","event":"\u001b[0m09:14:17","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.586556Z","level":"info","event":"\u001b[0m09:14:17  \u001b[32mCompleted successfully\u001b[0m","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.589510Z","level":"info","event":"\u001b[0m09:14:17","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:17.593706Z","level":"info","event":"\u001b[0m09:14:17  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:18.386984","level":"warning","event":"\n                Airflow 3.0.0 Asset (Dataset) URIs validation rules changed and OpenLineage URIs (standard used by Cosmos) are no longer accepted.\n                Therefore, if using Cosmos with Airflow 3, the Airflow Asset (Dataset) URI is now <postgres://dbt-course-postgres:5432/dwh_flight/demo_src/aircrafts>.\n                Before, with Airflow 2.x, the URI used to be <postgres://dbt-course-postgres:5432/dwh_flight.demo_src.aircrafts>.\n                Please, change any DAGs that were scheduled using the old standard to the new one.\n                ","logger":"cosmos.operators.local"}
+{"timestamp":"2025-05-08T09:14:18.662190","level":"warning","event":"\n                Airflow 3.0.0 Asset (Dataset) URIs validation rules changed and OpenLineage URIs (standard used by Cosmos) are no longer accepted.\n                Therefore, if using Cosmos with Airflow 3, the Airflow Asset (Dataset) URI is now <postgres://dbt-course-postgres:5432/dwh_flight/intermediate/stg_flights__aircrafts>.\n                Before, with Airflow 2.x, the URI used to be <postgres://dbt-course-postgres:5432/dwh_flight.intermediate.stg_flights__aircrafts>.\n                Please, change any DAGs that were scheduled using the old standard to the new one.\n                ","logger":"cosmos.operators.local"}
+{"timestamp":"2025-05-08T09:14:18.662693","level":"info","event":"Inlets: [Asset(name='postgres://dbt-course-postgres:5432/dwh_flight/demo_src/aircrafts', uri='postgres://dbt-course-postgres:5432/dwh_flight/demo_src/aircrafts', group='asset', extra={}, watchers=[])]","logger":"cosmos.operators.base"}
+{"timestamp":"2025-05-08T09:14:18.662808","level":"info","event":"Outlets: [Asset(name='postgres://dbt-course-postgres:5432/dwh_flight/intermediate/stg_flights__aircrafts', uri='postgres://dbt-course-postgres:5432/dwh_flight/intermediate/stg_flights__aircrafts', group='asset', extra={}, watchers=[])]","logger":"cosmos.operators.base"}
+{"timestamp":"2025-05-08T09:14:18.662930","level":"info","event":"Assigning outlets with DatasetAlias in Airflow 3","logger":"cosmos.operators.local"}
+{"timestamp":"2025-05-08T09:14:20.462071Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:20.473387Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:20.479219Z","level":"info","event":"Task operator:<Task(DbtRunLocalOperator): stg_flights__aircrafts.run>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-08T09:14:20.483771Z","level":"error","event":"/usr/local/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 2 leaked semaphore objects to clean up at shutdown","chan":"stderr","logger":"task"}
+{"timestamp":"2025-05-08T09:14:20.485940Z","level":"error","event":"  warnings.warn('resource_tracker: There appear to be %d '","chan":"stderr","logger":"task"}

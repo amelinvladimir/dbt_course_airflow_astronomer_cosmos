@@ -1,0 +1,30 @@
+unit_tests:
+  - name: test_append_one_new_row
+    description: "1 строка загружена в модель ранее. Во время обновления должна подгрузиться 1 новая строка с бОльшим bookref"
+    model: stg_flights__bookings_append
+    overrides:
+      macros:
+        is_incremental: true
+    given:
+      - input: source('demo_src', 'bookings')
+        rows:
+          - {book_ref: 00001F, book_date: 2017-01-02}
+      - input: this
+        rows:
+          - {book_ref: 00000F, book_date: 2017-01-01}
+    expect:
+      rows:
+        - {book_ref: 00001F, book_date: 2017-01-02}
+  - name: test_init_load_one_row
+    description: "загрузка одной строки при первой загрузке"
+    model: stg_flights__bookings_append
+    overrides:
+      macros:
+        is_incremental: false
+    given:
+      - input: source('demo_src', 'bookings')
+        rows:
+          - {book_ref: 00001F, book_date: 2017-01-02}
+    expect:
+      rows:
+        - {book_ref: 00001F, book_date: 2017-01-02}
